@@ -202,6 +202,7 @@ class VmessUri {
         self.tls = json["tls"].stringValue
         // type:伪装类型（none\http\srtp\utp\wechat-video）
         self.type = json["type"].stringValue
+        self.allowInsecure = json["allowInsecure"].stringValue == "true" ? true:false
         print("json", json)
     }
 }
